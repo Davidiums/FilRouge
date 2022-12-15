@@ -1,0 +1,11 @@
+@media screen and (max-width: 660px) {
+    body {
+        background-image: url(../../Projet/ressources/forest_little.jpg);
+    }
+}
+
+@media screen and (min-width: 660px) {
+    body {
+        background-image: url(../../Projet/ressources/forest_large.jpg);
+    }
+}

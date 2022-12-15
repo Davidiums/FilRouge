@@ -1,0 +1,215 @@
+nav{
+    z-index: 2000;
+    display: block;
+    position: absolute;
+    transform: translate(-45vw,-20vh);
+    margin-top: 0;
+    background-color: rgb(54, 22, 22);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+nav:hover{
+    background-color: rgb(31, 12, 12);
+}
+
+a{ 
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 400px){
+    html { overflow-y: hidden; }
+}
+
+@keyframes rotation{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+#system{
+    position: absolute;
+    margin-top: 50vh;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.trajectoire{
+    position: absolute;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    border: dashed   1px rgb(78,78, 78);
+}
+
+#trajectoire{
+    margin-top: 50vh;
+}
+
+/* affichage des trajectoires */
+#trajectoire :nth-child(1){
+    width: 90vh;
+    animation: rotation 6021.6s infinite linear;
+    animation-delay: -2400s;
+}
+
+#trajectoire :nth-child(2){
+    width: 80vh;
+    animation: rotation 3068.5s infinite linear;
+    animation-delay: -2000s;
+}
+
+#trajectoire :nth-child(3){
+    width: 70vh;
+    animation: rotation 1075.9s infinite linear;
+    animation-delay: -100s;
+}
+
+#trajectoire :nth-child(4){
+    width: 60vh;
+    animation: rotation 433.2s infinite linear;
+    animation-delay: -350s;
+}
+
+#trajectoire :nth-child(5){
+    width: 50vh;
+    animation: rotation 68.7s infinite linear;
+    animation-delay: -35s;
+}
+
+#trajectoire :nth-child(6){
+    width: 40vh;
+    animation: rotation 36.5s infinite linear;
+    animation-delay: -3s;
+}
+
+#trajectoire :nth-child(7){
+    width: 30vh;
+    animation: rotation 24.45s infinite linear;
+    animation-delay: -12s;
+}
+
+#trajectoire :nth-child(8){
+    width: 20vh;
+    animation: rotation 8.8s infinite linear;
+    animation-delay: -1.5s;
+}
+
+
+/* soleil */
+#trajectoire :nth-child(9){
+    width: 9vh;
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgb(255, 102, 0) 0%, rgba(255,217,0,1) 85%,  rgba(255,217,0,0.7) 100%); 
+    animation: rotation 5s infinite linear;
+    border: none;
+}
+
+/* ombre sur les planetes */ 
+#trajectoire :nth-child(10){
+    width: 100vh;
+    z-index: 50;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, 
+    rgba(0,0,0,0) 14%, rgb(0, 0, 0) 16%,  rgb(0, 0, 0) 17%, rgba(0,0,0,0) 18%,
+    rgba(0, 0, 0, 0) 22%, rgb(0, 0, 0) 22.5%,  rgb(0, 0, 0) 23.5%, rgba(0, 0, 0, 0) 25%,
+    rgba(0,0,0,0) 28.5%, rgb(0, 0, 0) 29.5%, rgb(0, 0, 0) 30%, rgba(0,0,0,0) 32%,
+    rgba(0,0,0,0) 35%, rgb(0, 0, 0) 36.5%, rgba(0,0,0,1) 39%,
+    rgba(0,0,0,0) 42%, rgb(0, 0, 0, 0.9) 43.4%, rgb(0, 0, 0) 46.9%, rgba(0,0,0,0) 47%,
+    rgba(0,0,0,0) 50%, rgb(0, 0, 0) 51%, rgb(0, 0, 0) 52.5%, rgba(0,0,0,0) 53%,
+    rgba(0,0,0,0) 57%, rgb(0, 0, 0) 58%, rgba(0,0,0,1) 61%,
+    rgba(0,0,0,0) 64%, rgb(0, 0, 0) 65%, rgba(0,0,0,1) 71%,
+    rgba(0,0,0,0) 92%, rgb(0, 0, 0) 94%, rgba(0,0,0,1) 96%); 
+    border: none;
+}
+
+/* affichage des planetes */
+
+.corps{
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+#trajectoire :nth-child(8) :first-child{
+    width: 1.7vh;
+    height: 1.7vh;
+    translate: -10vh;
+    animation: rotation 1408s infinite linear;
+    background: linear-gradient(90deg, rgba(149,86,19,1) 0%, rgba(69,60,22,1) 15%, rgba(122,61,7,1) 30%, rgba(189,15,15,1) 54%, rgba(180,45,4,1) 76%, rgba(68,34,4,1) 100%); 
+}
+
+#trajectoire :nth-child(7) :first-child{
+    width: 1.7vh;
+    height: 1.7vh;
+    translate: -15vh;
+    animation: rotation 5832s infinite linear;
+    background: rgb(246,244,245);
+    background: linear-gradient(17deg, rgba(246,244,245,1) 0%, rgba(255,253,250,1) 16%, rgba(252,250,245,1) 40%, rgba(247,243,233,1) 65%, rgba(235,224,198,1) 100%); 
+}
+
+#trajectoire :nth-child(6) :first-child{
+    width: 2vh;
+    height: 2vh;
+    translate: -20vh;
+    animation: rotation 24s infinite linear;
+    background: rgb(233,239,249);
+    background: linear-gradient(12deg, rgba(233,239,249,1) 0%, rgba(79,76,176,1) 8%, rgba(159,193,100,1) 26%, rgba(216,197,150,1) 49%, rgba(159,193,100,1) 61%, rgba(107,147,214,1) 69%, rgba(220,231,223,1) 79%); 
+}
+
+#trajectoire :nth-child(5) :first-child{
+    width: 1.7vh;
+    height: 1.7vh;
+    translate: -25vh;
+    animation: rotation 24.5s infinite linear;
+    background: rgb(153,133,122);
+    background: linear-gradient(12deg, rgba(153,133,122,1) 0%, rgba(198,123,92,1) 8%, rgba(226,123,88,1) 26%, rgba(255,157,111,1) 49%, rgba(102,57,38,1) 61%, rgba(142,106,90,1) 100%); 
+}
+
+#trajectoire :nth-child(4) :first-child{
+    width: 3.7vh;
+    height: 3.7vh;
+    translate: -30vh;
+    animation: rotation 10s infinite linear;
+    background: rgb(235,243,246);
+    background: linear-gradient(12deg, rgba(235,243,246,1) 0%, rgba(227,220,203,1) 6%, rgba(216,202,157,1) 11%, rgba(213,198,156,1) 16%, rgba(165,145,134,1) 20%, rgba(201,144,57,1) 25%, rgba(216,202,157,1) 32%, rgba(194,139,61,1) 36%, rgba(188,135,65,1) 42%, rgba(201,144,57,1) 45%, rgba(183,132,68,1) 49%, rgba(178,129,71,1) 55%, rgba(201,144,57,1) 59%, rgba(172,125,75,1) 63%, rgba(168,122,77,1) 68%, rgba(201,144,57,1) 72%, rgba(216,202,157,1) 75%, rgba(201,144,57,1) 100%); 
+}
+
+#trajectoire :nth-child(3) :first-child{
+    width: 2.8vh;
+    height: 2.8vh;
+    translate: -35vh;
+    animation: rotation 10.5s infinite linear;
+    background: rgb(237,219,173);
+    background: linear-gradient(45deg, rgba(237,219,173,1) 0%, rgba(226,191,125,1) 6%, rgba(195,146,79,1) 15%, rgba(252,238,173,1) 24%, rgba(196,176,139,1) 31%, rgba(196,176,139,1) 48%, rgba(252,238,173,1) 56%, rgba(195,146,79,1) 72%, rgba(226,191,125,1) 75%, rgba(237,219,173,1) 100%); 
+}
+
+#trajectoire :nth-child(2) :first-child{
+    width: 2.4vh;
+    height: 2.4vh;
+    translate: -40vh;
+    animation: rotation 17s infinite linear;
+    background: rgb(225,238,238);
+    background: linear-gradient(45deg, rgba(225,238,238,1) 0%, rgba(248,248,255,1) 8%, rgba(209,231,231,1) 12%, rgba(217,221,244,1) 25%, rgba(198,211,227,1) 31%, rgba(198,211,227,1) 53%, rgba(217,221,244,1) 63%, rgba(248,248,255,1) 70%, rgba(209,231,231,1) 78%, rgba(225,238,238,1) 100%); 
+}
+
+#trajectoire :nth-child(1) :first-child{
+    width: 2.4vh;
+    height: 2.4vh;
+    translate: -45vh;
+    animation: rotation 16s infinite linear;
+    background: rgb(213,213,236);
+    background: linear-gradient(45deg, rgba(213,213,236,1) 2%, rgba(133,173,219,1) 8%, rgba(91,93,223,1) 13%, rgba(63,84,186,1) 25%, rgba(39,70,135,1) 31%, rgba(39,70,135,1) 47%, rgba(63,84,186,1) 58%, rgba(63,84,186,1) 63%, rgba(91,93,223,1) 69%, rgba(133,173,219,1) 76%, rgba(213,213,236,1) 100%); 
+}

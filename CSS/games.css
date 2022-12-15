@@ -1,0 +1,68 @@
+.cases{
+    border: solid;
+    margin: 0;
+    width: 33.3333333%;
+    aspect-ratio: 1/1; 
+    text-align: center;
+    font-size: 140px;
+    user-select: none;
+}
+
+
+.lignes{
+    display: flex;
+    flex-direction: row;
+    height: 33.33333333%;
+    margin: 0;
+}
+
+#game{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#gameresult{
+    margin: auto;
+    margin-top: 5%;
+    width: 99%;
+    text-align: center;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+    color: aliceblue;
+    font-family: "fantasy";
+}
+
+
+@media screen and (max-width: 660px){
+    
+    body{
+        background-image: url(../ressources/game/spirit.jpg) ;
+    }
+
+    #game{
+        width: 70%;
+        aspect-ratio: 1/1;  
+        border: solid;
+        margin: auto;
+    }
+
+    .truc{
+        border-width: 1px;
+        font-size: 80px;
+        vertical-align: center;
+    }
+}
+
+@media screen and (min-width: 660px){
+    
+    body{
+        background-image: url(../ressources/game/mononoke.jpg) ;
+    }
+
+    #game{
+        width: 462px;
+        aspect-ratio: 1/1;  
+        border: solid;
+        margin: auto;
+    }
+}

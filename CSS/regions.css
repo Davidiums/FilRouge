@@ -1,0 +1,76 @@
+html { overflow-y: hidden; }
+
+body {
+    margin: 0px;
+    text-align: center;
+    background-color: black;
+
+}
+
+a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; 
+    color: azure;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    height: 25vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 75%;
+    filter: grayscale(100%);
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-size: 10vh;
+}
+
+#Vosges {
+    background-image: url(../ressources/Index/Vosges.jpg);
+}
+
+#Pyrenees {
+    background-image: url(../ressources/Index/Pyrénées.jpg);
+}
+
+#Jura {
+    background-image: url(../ressources/Index/Jura.jpg);
+}
+
+#Alpes {
+    background-image: url(../ressources/Index/Alpes.jpg);
+}
+
+
+
+.regions:hover{
+    background-position: 50% 25%;
+    filter: grayscale(0%);
+    height: 52vh;
+    transition: 2s;
+}
+
+#Alpes:hover{
+    background-position: top;
+}
+
+a:hover{
+    color: black;
+    transition: 2s;
+}
+
+#Vosges:hover{
+    background-position: top;
+}
+
+body:hover div{
+    height: 16vh;
+    transition: 3s;
+}
